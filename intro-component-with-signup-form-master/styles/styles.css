@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+/* 
+- Mobile: 375px
+- Desktop: 1440px
+font size 16px 
+1. imports
+2. root/global settings
+3. typography
+4. basic layout
+*/
+:root {
+    --red: hsl(0, 100%, 74%); 
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%); 
+    --grayish-blue: hsl(246, 25%, 77%);
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+body {
+    background-image: url(../images/bg-intro-mobile.png);
+    background-color: var(--red);
+}
+h2, .price, .intro-text p, .terms-services {
+    text-align: center;
+} 
+h2 {
+    margin: 80px 40px 0px;
+    font-size: 1.75rem;
+}
+
+.price {
+    background-color: var(--blue);
+    padding: 15px 50px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px;
+}
+.intro-text p {
+    padding: 20px;
+    line-height: 1.8;
+}
+.form-modal, input, button, .price {
+    border-radius: 8px;
+}
+
+.form-modal {
+    background-color: white;
+    margin: 20px;
+    padding: 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 8px;
+}
+
+input, button {
+    width: 100%;
+    padding: 16px;
+    margin: 16px 0px 0px;
+    font-weight: 600;
+    border-color: rgba(0, 0, 0, 0.15);
+}
+button {
+    background-color: var(--green);
+    border: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.terms-services {
+    color: var(--grayish-blue);
+    font-size: 0.75rem;
+    padding: 0px 16px;
+}
+a {
+    color: var(--red);
+}
+a:hover, button:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 650px) {
+    html, body, main {
+        height: 100%;
+    }
+    body, main {
+        display: flex;
+    }
+    body {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    main {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .intro-text {
+        margin-left: calc(10% + 1vw)
+    }
+    .form {
+        margin-right: 2vw;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    h2, .intro-text p {
+        margin-left: 0;
+        padding-left: 0;
+        text-align: left;
+    }
+}
