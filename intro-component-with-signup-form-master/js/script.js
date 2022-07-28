@@ -16,3 +16,11 @@ inputs.forEach(input => {
         });
 });
 
+const submitButton = document.querySelector("#submit");
+
+submitButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    inputs.forEach(input => {
+        validate(input,patterns[input.attributes.name.value]);
+    });
+});
