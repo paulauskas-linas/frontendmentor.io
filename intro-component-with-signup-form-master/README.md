@@ -14,7 +14,6 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 ## Overview
@@ -36,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution on FrontendMentor.io]()
-- Live Site URL: [Live site on Netlify]()
+- Solution URL: [Solution on FrontendMentor.io](https://www.frontendmentor.io/solutions/intro-signup-form-with-some-css-flexbox-yZT3aUgjC_)
+- Live Site URL: [Live site on Netlify](https://intro-component-with-signup-form-master-linas.netlify.app/)
 
 ## My process
 
