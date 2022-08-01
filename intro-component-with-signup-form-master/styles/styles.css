@@ -14,10 +14,10 @@ body {
     background-image: url(../images/bg-intro-mobile.png);
     background-color: var(--red);
 }
-h2, .price, .intro-text p, .terms-services {
+h1, .price, .intro-text p, .terms-services {
     text-align: center;
 } 
-h2 {
+h1 {
     margin: 80px 40px 0px;
     font-size: 1.75rem;
 }
@@ -128,10 +128,10 @@ button:hover {
         margin-right: 4vw;
         width: 45%;
     }
-    h2 {
+    h1 {
         font-size: 3rem;
     }
-    h2, .intro-text p {
+    h1, .intro-text p {
         margin-left: 0;
         padding-left: 0;
         text-align: left;

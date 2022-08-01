@@ -2,7 +2,7 @@ const patterns = {
  email: /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/,
  fname:/(?!^$)([^\s])/, //not empty, no spaces
  lname:/(?!^$)([^\s])/,
- password:/(?!^$)([^\s])/,
+ password:/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}$/,
 }    
 const inputs = document.querySelectorAll("input");
 
