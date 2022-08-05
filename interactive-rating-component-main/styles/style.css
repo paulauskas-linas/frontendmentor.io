@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --orange: hwb(25 7% 2%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+html {
+    font-family: 'Overpass', sans-serif;
+}
+html, body {
+    height: 100%;
+    color: var(--white);
+}
+body {
+    background-color: var(--very-dark-blue);
+}
+body, main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.component {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+    height: 21rem;
+    width: 20rem;
+    margin: 2rem;
+    background-color: var(--dark-blue);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    z-index: 2;
+}
+.component:nth-child(2) {
+    align-items: center;
+}
+h1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+.component p {
+    color: var(--medium-grey);
+    width: 100%;
+    text-align: justify;
+    font-size: 15px;
+}
+input {
+    display: none;
+}
+.star-icon {
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+    padding-bottom: 0.55rem;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--very-dark-blue);
+}
+form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+label {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.25rem;
+    border-radius: 50%;
+    background-color: var(--very-dark-blue);
+    text-align: center;
+    line-height: 1.5rem;
+    color: var(--light-grey);
+    cursor: pointer;
+    font-size: 0.75rem;
+}
+label:hover {
+    background-color: var(--medium-grey);
+    color: var(--white);
+}
+input:checked + label {
+    background-color: var(--orange);
+    color: var(--white);
+}
+button {
+    appearance: none;
+    border: none;
+    border-radius: 1rem;
+    width: 100%;
+    height: 2rem;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: var(--orange);
+    cursor: pointer;
+    letter-spacing: 0.15rem;
+}
+button:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
+.rating {
+    height: 2rem;
+    padding: 0.25rem 0.5rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    background-color: var(--very-dark-blue);
+    text-align: center;
+    line-height: 1.5rem;
+    color: var(--orange);
+    cursor: pointer;
+    font-size: 0.75rem;
+}
+.error {
+    align-self: center;
+    margin-top: 0.5rem;
+    color: var(--orange);
+    font-style: italic;
+}
+.hidden {
+    display: none;
+}
