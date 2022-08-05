@@ -32,8 +32,8 @@ Confirm modal
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/interactive-rating-component-in-plain-html-css-js-upObTdOMJ0)
+- Live Site URL: [Site on Netlify](https://interactive-rating-component-main-linas.netlify.app/)
 
 ## My process
 
