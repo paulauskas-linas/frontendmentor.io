@@ -20,18 +20,19 @@
     <h1>How did we do?</h1>
     <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
     <form>
-      <input type="radio" name="rate" id="rate1" value="1">
+      <input required type="radio" name="rate" id="rate1" value="1" class="visually-hidden">
       <label for="rate1">1</label>
-      <input type="radio" name="rate" id="rate2" value="2">
+      <input type="radio" name="rate" id="rate2" value="2" class="visually-hidden">
       <label for="rate2">2</label>
-      <input type="radio" name="rate" id="rate3" value="3">
+      <input type="radio" name="rate" id="rate3" value="3" class="visually-hidden">
       <label for="rate3">3</label>
-      <input type="radio" name="rate" id="rate4" value="4">
+      <input type="radio" name="rate" id="rate4" value="4" class="visually-hidden" >
       <label for="rate4">4</label>
-      <input type="radio" name="rate" id="rate5" value="5">
+      <input type="radio" name="rate" id="rate5" value="5" class="visually-hidden">
       <label for="rate5">5</label>
+      <div class="break"></div> <!--makes next flex-item take full row-->
+      <input class="button" type="submit" name="submit" id="submit">
     </form>
-    <button>Submit</button>
     <span class="error hidden" >Please select the rating</span>
   </div>
   <div class="component hidden" id="confirmation">

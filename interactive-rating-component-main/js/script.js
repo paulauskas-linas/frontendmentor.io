@@ -1,36 +1,29 @@
-const submitButton = document.querySelector('button');
-const radioButtons = document.querySelectorAll("input[type=radio]");
+const body = document.querySelector("body");
+const form = document.querySelector("form");
 const ratingDiv = document.querySelector("#rating");
 const confirmationDiv = document.querySelector("#confirmation");
 const rateValueSpan = document.querySelector(".rate");
 const errorSpan = document.querySelector(".error");
-const body = document.querySelector("body");
+const submitButton = document.querySelector("input[type=submit]");
 
-let selectedRating ;
-
-function getRating() {
-    for (const radioButton of radioButtons) {
-        if(radioButton.checked) {
-            selectedRating = radioButton.value;
-            break;
-        }
-    }
-}
-function confirmRating(){
-    if(selectedRating == undefined) {
+function confirmRating(rating){
+    if(rating == null) {
         errorSpan.classList.remove("hidden");
     } else {
         ratingDiv.classList.add("hidden");
         confirmationDiv.classList.remove("hidden");
-        rateValueSpan.textContent = selectedRating;
+        rateValueSpan.textContent = rating;
     }
 }
 
-submitButton.addEventListener('click', () => {
-    getRating();
-    confirmRating();
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const rating = formData.get('rate');
+    confirmRating(rating);
 });
-body.addEventListener('click', () => {
+
+body.addEventListener('click', (e) => {
     if(ratingDiv.classList.contains("hidden")) {
         location.reload();
     }
